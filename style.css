@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  -webkit-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+  -webkit-box-shadow: -2px 2px 2px 0px rgb(66, 68, 90);
+          box-shadow: -2px 2px 2px 0px rgb(66, 68, 90);
+}
+
+button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.allWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+.allWrapper .leftWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 60vw;
+  overflow: visible;
+}
+.allWrapper .leftWrapper .customProductWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0px 0px 0px;
+}
+.allWrapper .leftWrapper .customProductWrapper div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  margin: 15px 0;
+}
+.allWrapper .leftWrapper .customProductWrapper div:nth-child(2), .allWrapper .leftWrapper .customProductWrapper div:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18%;
+  margin: 15px 0;
+}
+.allWrapper .leftWrapper .customProductWrapper div:nth-child(3), .allWrapper .leftWrapper .customProductWrapper div:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12%;
+  margin: 15px 0;
+}
+.allWrapper .leftWrapper .customProductWrapper div:nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5%;
+  margin: 15px 0;
+}
+.allWrapper .leftWrapper .customProductWrapper input {
+  padding: 5px 5px;
+  width: 80%;
+}
+.allWrapper .leftWrapper .addCustomProduct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.allWrapper .leftWrapper .addCustomProduct button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding: 5px 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.allWrapper .leftWrapper .signatureWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0px;
+  width: 100%;
+}
+.allWrapper .leftWrapper .signatureWrapper .signature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  padding-left: 35px;
+}
+.allWrapper .leftWrapper .signatureWrapper .signature .sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+.allWrapper .leftWrapper .signatureWrapper .nameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+.allWrapper .leftWrapper .signatureWrapper .nameWrapper button {
+  padding: 15px 15px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  width: 150px;
+}
+.allWrapper .leftWrapper .buttonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 20px;
+}
+.allWrapper .leftWrapper .buttonWrapper button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  margin: 10px 10px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+.allWrapper .leftWrapper .tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px 0px;
+}
+.allWrapper .leftWrapper .tittle div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+.allWrapper .leftWrapper .tittle div:nth-child(2), .allWrapper .leftWrapper .tittle div:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18%;
+}
+.allWrapper .leftWrapper .tittle div:nth-child(3), .allWrapper .leftWrapper .tittle div:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12%;
+}
+.allWrapper .leftWrapper .tittle div:nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5%;
+}
+.allWrapper .leftWrapper .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 0px 5px 0px;
+}
+.allWrapper .leftWrapper .product i {
+  padding: 5px;
+  color: rgb(212, 45, 45);
+}
+.allWrapper .leftWrapper .product div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  padding-left: 8px;
+}
+.allWrapper .leftWrapper .product div:nth-child(2), .allWrapper .leftWrapper .product div:nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18%;
+}
+.allWrapper .leftWrapper .product div:nth-child(2) input, .allWrapper .leftWrapper .product div:nth-child(5) input {
+  padding: 3px 8px;
+  width: 80%;
+  text-align: right;
+}
+.allWrapper .leftWrapper .product div:nth-child(3), .allWrapper .leftWrapper .product div:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12%;
+}
+.allWrapper .leftWrapper .product div:nth-child(3) input, .allWrapper .leftWrapper .product div:nth-child(4) input {
+  padding: 3px 8px;
+  width: 60%;
+  text-align: center;
+}
+.allWrapper .leftWrapper .product div:nth-child(6) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5%;
+}
+.allWrapper .rightWrapper {
+  background-color: rgba(171, 196, 223, 0.486);
+  height: 100vh;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+.allWrapper .rightWrapper button {
+  width: 150px;
+  height: 70px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.allWrapper .singlePerpetualMenuWrapper, .allWrapper .networkPerpetualMenuWrapper, .allWrapper .YearlyMenuWrapper, .allWrapper .upgradeWrapper, .allWrapper .crossUpgradeWrapper, .allWrapper .trainingWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 40vw;
+  background-color: #bebebe;
+  left: 100vw;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.allWrapper .singlePerpetualMenuWrapper .fa-arrow-right, .allWrapper .networkPerpetualMenuWrapper .fa-arrow-right, .allWrapper .YearlyMenuWrapper .fa-arrow-right, .allWrapper .upgradeWrapper .fa-arrow-right, .allWrapper .crossUpgradeWrapper .fa-arrow-right, .allWrapper .trainingWrapper .fa-arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+  padding: 5px 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.allWrapper .singlePerpetualMenuWrapper .liteWrapper, .allWrapper .singlePerpetualMenuWrapper .proWrapper, .allWrapper .singlePerpetualMenuWrapper .bimWrapper, .allWrapper .singlePerpetualMenuWrapper .mechanicalWrapper, .allWrapper .singlePerpetualMenuWrapper .ultimateWrapper, .allWrapper .singlePerpetualMenuWrapper .communicatorWrapper, .allWrapper .networkPerpetualMenuWrapper .liteWrapper, .allWrapper .networkPerpetualMenuWrapper .proWrapper, .allWrapper .networkPerpetualMenuWrapper .bimWrapper, .allWrapper .networkPerpetualMenuWrapper .mechanicalWrapper, .allWrapper .networkPerpetualMenuWrapper .ultimateWrapper, .allWrapper .networkPerpetualMenuWrapper .communicatorWrapper, .allWrapper .YearlyMenuWrapper .liteWrapper, .allWrapper .YearlyMenuWrapper .proWrapper, .allWrapper .YearlyMenuWrapper .bimWrapper, .allWrapper .YearlyMenuWrapper .mechanicalWrapper, .allWrapper .YearlyMenuWrapper .ultimateWrapper, .allWrapper .YearlyMenuWrapper .communicatorWrapper, .allWrapper .upgradeWrapper .liteWrapper, .allWrapper .upgradeWrapper .proWrapper, .allWrapper .upgradeWrapper .bimWrapper, .allWrapper .upgradeWrapper .mechanicalWrapper, .allWrapper .upgradeWrapper .ultimateWrapper, .allWrapper .upgradeWrapper .communicatorWrapper, .allWrapper .crossUpgradeWrapper .liteWrapper, .allWrapper .crossUpgradeWrapper .proWrapper, .allWrapper .crossUpgradeWrapper .bimWrapper, .allWrapper .crossUpgradeWrapper .mechanicalWrapper, .allWrapper .crossUpgradeWrapper .ultimateWrapper, .allWrapper .crossUpgradeWrapper .communicatorWrapper, .allWrapper .trainingWrapper .liteWrapper, .allWrapper .trainingWrapper .proWrapper, .allWrapper .trainingWrapper .bimWrapper, .allWrapper .trainingWrapper .mechanicalWrapper, .allWrapper .trainingWrapper .ultimateWrapper, .allWrapper .trainingWrapper .communicatorWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.allWrapper .singlePerpetualMenuWrapper .liteWrapper button, .allWrapper .singlePerpetualMenuWrapper .proWrapper button, .allWrapper .singlePerpetualMenuWrapper .bimWrapper button, .allWrapper .singlePerpetualMenuWrapper .mechanicalWrapper button, .allWrapper .singlePerpetualMenuWrapper .ultimateWrapper button, .allWrapper .singlePerpetualMenuWrapper .communicatorWrapper button, .allWrapper .networkPerpetualMenuWrapper .liteWrapper button, .allWrapper .networkPerpetualMenuWrapper .proWrapper button, .allWrapper .networkPerpetualMenuWrapper .bimWrapper button, .allWrapper .networkPerpetualMenuWrapper .mechanicalWrapper button, .allWrapper .networkPerpetualMenuWrapper .ultimateWrapper button, .allWrapper .networkPerpetualMenuWrapper .communicatorWrapper button, .allWrapper .YearlyMenuWrapper .liteWrapper button, .allWrapper .YearlyMenuWrapper .proWrapper button, .allWrapper .YearlyMenuWrapper .bimWrapper button, .allWrapper .YearlyMenuWrapper .mechanicalWrapper button, .allWrapper .YearlyMenuWrapper .ultimateWrapper button, .allWrapper .YearlyMenuWrapper .communicatorWrapper button, .allWrapper .upgradeWrapper .liteWrapper button, .allWrapper .upgradeWrapper .proWrapper button, .allWrapper .upgradeWrapper .bimWrapper button, .allWrapper .upgradeWrapper .mechanicalWrapper button, .allWrapper .upgradeWrapper .ultimateWrapper button, .allWrapper .upgradeWrapper .communicatorWrapper button, .allWrapper .crossUpgradeWrapper .liteWrapper button, .allWrapper .crossUpgradeWrapper .proWrapper button, .allWrapper .crossUpgradeWrapper .bimWrapper button, .allWrapper .crossUpgradeWrapper .mechanicalWrapper button, .allWrapper .crossUpgradeWrapper .ultimateWrapper button, .allWrapper .crossUpgradeWrapper .communicatorWrapper button, .allWrapper .trainingWrapper .liteWrapper button, .allWrapper .trainingWrapper .proWrapper button, .allWrapper .trainingWrapper .bimWrapper button, .allWrapper .trainingWrapper .mechanicalWrapper button, .allWrapper .trainingWrapper .ultimateWrapper button, .allWrapper .trainingWrapper .communicatorWrapper button {
+  width: 150px;
+  height: 80px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+.allWrapper .singlePerpetualMenuWrapper .trainWrapper, .allWrapper .networkPerpetualMenuWrapper .trainWrapper, .allWrapper .YearlyMenuWrapper .trainWrapper, .allWrapper .upgradeWrapper .trainWrapper, .allWrapper .crossUpgradeWrapper .trainWrapper, .allWrapper .trainingWrapper .trainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.allWrapper .singlePerpetualMenuWrapper .trainWrapper button, .allWrapper .networkPerpetualMenuWrapper .trainWrapper button, .allWrapper .YearlyMenuWrapper .trainWrapper button, .allWrapper .upgradeWrapper .trainWrapper button, .allWrapper .crossUpgradeWrapper .trainWrapper button, .allWrapper .trainingWrapper .trainWrapper button {
+  width: 150px;
+  height: 80px;
+  margin: 10px 10px;
+  border-radius: 5px;
+  padding: 5px 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div class="allWrapper">
+
+        <div class="leftWrapper">
+            <div class="tittle">
+                <div>Produkt</div>
+                <div>Cena netto [PLN]</div>
+                <div>Ilość</div>
+                <div>Rabat %</div>
+                <div>Wartość netto [PLN]</div>
+                <div></div>
+            </div>
+
+            <div class="products" id="products">
+
+            </div>
+            <div class="buttonWrapper">
+                <button class="refresh">Odśwież</button>
+                <button class="pdfGenerate">Wygeneruj PDF</button>
+            </div>
+            <div class="customProductWrapper">
+                <div>
+                    <input class="customProductName" type="text" placeholder="Nazwa produktu">
+                </div>
+                <div>
+                    <input class="customProductSinglePrice" type="text" min="1" placeholder="Cena netto [PLN]">
+                </div>
+                <div>
+                    <input class="customProductQuantity" type="number" placeholder="Ilość">
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="addCustomProduct">
+                <button class="buttonCustomProduct">Dodaj produkt</button>
+            </div>
+
+
+            <div class="signatureWrapper">
+                <div class="signature">
+                    <div class="sales salesName">Imię i nazwisko</div>
+                    <div class="sales salesMail"><i class="fa-regular fa-envelope"></i>: Mail</div>
+                    <div class="sales salesPhone"><i class="fa-solid fa-phone-volume"></i>: Telefon</div>
+                </div>
+                <div class="nameWrapper">
+                    <button class="dominika">Dominika</button>
+                    <button class="marcin">Marcin</button>
+                    <button class="artur">Artur</button>
+                    <button class="rafal">Rafał</button>
+                </div>
+
+            </div>
+
+            <!-- <div class="euroCourse">Aktualny kurs Euro: </div> -->
+        </div>
+
+
+
+        <div class="rightWrapper">
+            <button class="showSingle">Stanowiskowe, wieczyste</button>
+            <button class="showNetwork">Sieciowe, wieczyste</button>
+            <button class="showYearly">Licencje czasowe</button>
+            <button class="upgrade">Aktualizacje</button>
+            <button class="crossUpgrade">Podniesienie wersji</button>
+            <button class="training">Szkolenia</button>
+        </div>
+
+
+
+
+        <div class="singlePerpetualMenuWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div><strong>Stanowiskowe wieczyste</strong></div>
+            <div class="liteWrapper">
+                <button class="liteSinglePerpetual">BricsCAD Lite V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceLiteSinglePerpetual">Pakiet maintenance BricsCAD Lite V24 - wieczysty, stanowiskowy</button>
+            </div>
+            <div class="proWrapper">
+                <button class="proSinglePerpetual">BricsCAD Pro V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceProSinglePerpetual">Pakiet maintenance BricsCAD Pro V24 - wieczysty, stanowiskowy</button>
+            </div>
+            <div class="bimWrapper">
+                <button class="bimSinglePerpetual">BricsCAD BIM V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceBimSinglePerpetual">Pakiet maintenance BricsCAD BIM V24 - wieczysty, stanowiskowy</button>
+            </div>
+            <div class="mechanicalWrapper">
+                <button class="mechanicalSinglePerpetual">BricsCAD Mechanical V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceMechanicalSinglePerpetual">Pakiet maintenance BricsCAD Mechanical V24 - wieczysty, stanowiskowy</button>
+            </div>
+            <div class="ultimateWrapper">
+                <button class="ultimateSinglePerpetual">BricsCAD Ultimate V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceUltimateSinglePerpetual">Pakiet maintenance BricsCAD Ultimate V24 - wieczysty, stanowiskowy</button>
+            </div>
+            <div class="communicatorWrapper">
+                <button class="communicatorSinglePerpetual">Communicator V24 - wieczysty, stanowiskowy</button>
+                <button class="maintenanceCommunicatorSinglePerpetual">Pakiet maintenance Communicator V24 - wieczysty, stanowiskowy</button>
+            </div>
+        </div>
+
+
+        <div class="networkPerpetualMenuWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div><strong>Sieciowe, wieczyste</strong></div>
+            <div class="liteWrapper">
+                <button class="liteNetworkPerpetual">BricsCAD Lite V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceLiteNetworkPerpetual">Pakiet maintenance BricsCAD Lite V24 - wieczysty, sieciowy</button>
+            </div>
+            <div class="proWrapper">
+                <button class="proNetworkPerpetual">BricsCAD Pro V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceProNetworkPerpetual">Pakiet maintenance BricsCAD Pro V24 - wieczysty, sieciowy</button>
+            </div>
+            <div class="bimWrapper">
+                <button class="bimNetworkPerpetual">BricsCAD BIM V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceBimNetworkPerpetual">Pakiet maintenance BricsCAD BIM V24 - wieczysty, sieciowy</button>
+            </div>
+            <div class="mechanicalWrapper">
+                <button class="mechanicalNetworkPerpetual">BricsCAD Mechanical V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceMechanicalNetworkPerpetual">Pakiet maintenance BricsCAD Mechanical V24 - wieczysty, sieciowy</button>
+            </div>
+            <div class="ultimateWrapper">
+                <button class="ultimateNetworkPerpetual">BricsCAD Ultimate V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceUltimateNetworkPerpetual">Pakiet maintenance BricsCAD Ultimate V24 - wieczysty, sieciowy</button>
+            </div>
+            <div class="communicatorWrapper">
+                <button class="communicatorNetworkPerpetual">Communicator V24 - wieczysty, sieciowy</button>
+                <button class="maintenanceCommunicatorNetworkPerpetual">Pakiet maintenance Communicator V24 - wieczysty, sieciowy</button>
+            </div>
+        </div>
+
+
+        <div class="YearlyMenuWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div><strong>Roczne</strong></div>
+            <div class="liteWrapper">
+                <button class="liteSingleYearly">BricsCAD Lite V24 - roczny, stanowiskowy</button>
+                <button class="liteNetworkYearly">BricsCAD Lite V24 - roczny, sieciowy</button>
+            </div>
+            <div class="proWrapper">
+                <button class="proSingleYearly">BricsCAD Pro V24 - roczny, stanowiskowy</button>
+                <button class="proNetworkYearly">BricsCAD Pro V24 - roczny, sieciowy</button>
+            </div>
+            <div class="bimWrapper">
+                <button class="bimSingleYearly">BricsCAD BIM V24 - roczny, stanowiskowy</button>
+                <button class="bimNetworkYearly">BricsCAD BIM V24 - roczny, sieciowy</button>
+            </div>
+            <div class="mechanicalWrapper">
+                <button class="mechanicalSingleYearly">BricsCAD Mechanical V24 - roczny, stanowiskowy</button>
+                <button class="mechanicalNetworkYearly">BricsCAD Mechanical V24 - roczny, sieciowy</button>
+            </div>
+            <div class="ultimateWrapper">
+                <button class="ultimateSingleYearly">BricsCAD Ultimate V24 - roczny, stanowiskowy</button>
+                <button class="ultimateNetworkYearly">BricsCAD Ultimate V24 - roczny, sieciowy</button>
+            </div>
+            <div class="communicatorWrapper">
+                <button class="communicatorSingleYearly">Communicator V24 - roczny, stanowiskowy</button>
+                <button class="communicatorNetworkYearly">Communicator V24 - roczny, sieciowy</button>
+            </div>
+        </div>
+
+
+        <div class="upgradeWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div><strong>Aktualizacje</strong></div>
+            <div class="liteWrapper">
+                <button class="v21LiteUpgrade">Aktualizacja BricsCAD Lite V21 do V24 + pakiet maintenance</button>
+                <button class="v22LiteUpgrade">Aktualizacja BricsCAD Lite V22 do V24 + pakiet maintenance</button>
+                <button class="v23LiteUpgrade">Aktualizacja BricsCAD Lite V23 do V24 + pakiet maintenance</button>
+            </div>
+            <div class="proWrapper">
+                <button class="v21ProUpgrade">Aktualizacja BricsCAD Pro V21 do V24 + pakiet maintenance</button>
+                <button class="v22ProUpgrade">Aktualizacja BricsCAD Pro V22 do V24 + pakiet maintenance</button>
+                <button class="v23ProUpgrade">Aktualizacja BricsCAD Pro V23 do V24 + pakiet maintenance</button>
+            </div>
+            <div class="bimWrapper">
+                <button class="v21BimUpgrade">Aktualizacja BricsCAD BIM V21 do V24 + pakiet maintenance</button>
+                <button class="v22BimUpgrade">Aktualizacja BricsCAD BIM V22 do V24 + pakiet maintenance</button>
+                <button class="v23BimUpgrade">Aktualizacja BricsCAD BIM V23 do V24 + pakiet maintenance</button>
+            </div>
+            <div class="mechanicalWrapper">
+                <button class="v21MechanicalUpgrade">Aktualizacja BricsCAD Mechanical V21 do V24 + pakiet maintenance</button>
+                <button class="v22MechanicalUpgrade">Aktualizacja BricsCAD Mechanical V22 do V24 + pakiet maintenance</button>
+                <button class="v23MechanicalUpgrade">Aktualizacja BricsCAD Mechanical V23 do V24 + pakiet maintenance</button>
+            </div>
+            <div class="ultimateWrapper">
+                <button class="v21UltimateUpgrade">Aktualizacja BricsCAD Ultimate V21 do V24 + pakiet maintenance</button>
+                <button class="v22UltimateUpgrade">Aktualizacja BricsCAD Ultimate V22 do V24 + pakiet maintenance</button>
+                <button class="v23UltimateUpgrade">Aktualizacja BricsCAD Ultimate V23 do V24 + pakiet maintenance</button>
+            </div>
+            <div class="communicatorWrapper">
+                <button class="v21CommunicatorUpgrade">Aktualizacja BricsCAD Communicator V21 do V24 + pakiet maintenance</button>
+                <button class="v22CommunicatorUpgrade">Aktualizacja BricsCAD Communicator V22 do V24 + pakiet maintenance</button>
+                <button class="v23CommunicatorUpgrade">Aktualizacja BricsCAD Communicator V23 do V24 + pakiet maintenance</button>
+            </div>
+        </div>
+
+
+        <div class="crossUpgradeWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="liteWrapper">
+                <button class="liteToPro">Podniesienie wersji BricsCAD Lite do Pro</button>
+                <button class="liteToBim">Podniesienie wersji BricsCAD Lite do BIM</button>
+            </div>
+            <div class="liteWrapper">
+                <button class="liteToMechanical">Podniesienie wersji BricsCAD Lite do Mechanical</button>
+                <button class="liteToUltimate">Podniesienie wersji BricsCAD Lite do Ultimate</button>
+            </div>
+            <div class="proWrapper">
+                <button class="proToBim">Podniesienie wersji BricsCAD Pro do BIM</button>
+                <button class="proToMechanical">Podniesienie wersji BricsCAD Pro do Mechanical</button>
+                <button class="proToUltimate">Podniesienie wersji BricsCAD Pro do Ultimate</button>
+            </div>
+            <div class="bimWrapper">
+                <button class="bimToUltimate">Podniesienie wersji BricsCAD BIM do Ultimate</button>
+            </div>
+            <div class="mechanicalWrapper">
+                <button class="mechanicalToUltimate">Podniesienie wersji BricsCAD Mechanical do Ultimate</button>
+            </div>
+        </div>
+
+
+        <div class="trainingWrapper">
+            <i class="fa-solid fa-arrow-right"></i>
+            <div class="trainWrapper">
+                <button class="liteTraining">Szkolenie BricsCAD Lite</button>
+                <button class="proTraining">Szkolenie BricsCAD Pro</button>
+                <button class="bimTraining">Szkolenie BricsCAD BIM</button>
+                <button class="mechanicalTraining">Szkolenie BricsCAD Mechanical</button>
+            </div>
+        </div>
+
+    </div>
+<table id="myTable"></table>
+<script src="/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+<script src="https://unpkg.com/jspdf-invoice-template@1.4.0/dist/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+<script src="https://kit.fontawesome.com/539b204ede.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
