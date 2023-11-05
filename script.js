@@ -665,9 +665,9 @@ GenerujPDF = () => {
   
     // Define your images
     let images = [
-      { src: 'images/bricscad.png', x: 60, y: 0, width: 90, height: 45 }, // Adjust Y to 20
-      { src: 'images/elite-partner.png', x: 85, y: 260, width: 100, height: 20 }, // Adjust Y to 280
-      { src: 'images/VSlogo.png', x: 30, y: 255, width: 35, height: 30 } // Adjust Y to 275
+      { src: 'bricscad.png', x: 60, y: 0, width: 90, height: 45 }, // Adjust Y to 20
+      { src: 'elite-partner.png', x: 85, y: 260, width: 100, height: 20 }, // Adjust Y to 280
+      { src: 'VSlogo.png', x: 30, y: 255, width: 35, height: 30 } // Adjust Y to 275
     ];
   
     let loadedImages = 0; // Count the number of loaded images
